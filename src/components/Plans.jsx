@@ -1,8 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 
 function Plans() {
+
+
+
   return (
-    <section className="section-wrapper">
+    <section>
+    <div className="section-wrapper">
       <div className="section-heading section-heading-why">
         <span className="main-tagline mx-auto !block max-w-fit">
           Simple Pricing
@@ -14,6 +18,7 @@ function Plans() {
         </p>
       </div>
       <div className="plans-cards-wrapper">
+        
         <div className="plans-card">
           <h5 className="plan-highlight">Free</h5>
           <h3 className="plan-name">Free</h3>
@@ -33,7 +38,7 @@ function Plans() {
           </ul>
           <button className="plan-cta">Start Free</button>
         </div>
-        <div className="plans-card">
+        <div className="plans-card plans-card-popular">
           <h5 className="plan-highlight">Pro</h5>
           <h3 className="plan-name">
             $0.20 <span>per image</span>
@@ -52,7 +57,7 @@ function Plans() {
               <span>🎯</span>Priority Support
             </li>
           </ul>
-          <button className="plan-cta">Go Pro</button>
+          <button className="plan-cta" >Go Pro</button>
         </div>
         <div className="plans-card">
           <h5 className="plan-highlight">API</h5>
@@ -76,6 +81,7 @@ function Plans() {
           <button className="plan-cta">Get API Access</button>
         </div>
       </div>
+    </div>
     </section>
   );
 }

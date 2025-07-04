@@ -328,6 +328,82 @@ section {
   background: radial-gradient(circle at 50% 50%, #ff009911, #9b89b333);
 }
 
+
+/* plans */
+
+.plans-cards-wrapper{
+  display: grid;
+  width: 90%;
+  margin-inline: auto;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap:2rem;
+  margin-top: 5rem;
+  position: relative
+}
+
+.plans-card{
+  @apply bg-[#1F293780] border border-[#1F293780] rounded-2xl py-7 px-6 transition-all duration-300 ease-linear;
+}
+
+.plan-highlight{
+  @apply text-2xl font-bold pb-2;
+}
+
+.plan-name{
+  @apply text-3xl font-bold pb-5 ;
+}
+
+.plan-name span{
+  @apply text-sm font-light text-gray-400;
+}
+.plans-feature
+{
+  @apply flex flex-col items-start justify-start gap-4 ;
+}
+
+.plans-feature li span{
+  @apply text-xl mr-3;
+}
+.plans-feature li{
+  @apply text-gray-200 text-[1rem];
+}
+
+.plan-cta{
+  @apply mt-6 block w-full text-center transition-all duration-300 ease-linear bg-gray-600 hover:bg-gray-500 rounded-full py-3 text-[1rem] font-bold cursor-pointer;
+}
+
+.plans-card .plan-cta:hover .plans-card{
+  transform: scale(1.1);
+}
+
+.plans-card-popular{
+
+ @apply bg-gradient-to-br from-[#ff009928]  to-[#ff009915] border border-[#ff009946] relative;
+
+}
+
+
+.plans-card-popular::before{
+   content: "Most Popular";
+   position: absolute;
+   background-color: white;
+   padding: 5px 12px;
+   color: #ff0099;
+   font-size: 0.8rem;
+   font-weight: 800;
+   border-radius: 1rem;
+   top: 0;
+   transform: translateY(-50%);
+   right: 1rem;
+}
+.plans-card-popular .plan-cta{
+  @apply bg-[#ff0099] hover:bg-[#ff0099d0];
+}
+
+.plans-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
 /* Media queries */
 
 @media (min-width: 768px) {
