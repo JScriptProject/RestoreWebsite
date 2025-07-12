@@ -404,6 +404,63 @@ section {
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
+
+/* FAQ Section */
+#faq-section{
+  background-color: #060f22;
+}
+
+.faq-section-contents{
+  @apply mt-5 max-w-full lg:max-w-[724px] mx-auto;
+}
+
+.faq-block ul li{
+@apply mt-6 ;
+}
+
+.faq-block .faq-heading{
+  @apply text-xl font-bold mb-3 text-amber-50;
+}
+
+.faq-block .faq-para{
+  @apply text-[1rem] text-gray-300;
+}
+
+.faq-block ul li hr{
+  color:#454553;
+  @apply mt-6;
+}
+
+/* Footer */
+
+footer h3{
+ @apply mb-4 text-[1rem] text-amber-50 font-semibold;
+}
+
+footer .quicklinks ul{
+  @apply flex flex-row gap-5;
+}
+
+footer li{
+  @apply text-sm text-gray-500 cursor-pointer;
+}
+
+footer .popular-services ul{
+@apply grid grid-cols-1 sm:grid-cols-2 ml-0 w-max gap-3; 
+}
+
+footer .rights{
+   @apply text-sm text-gray-400 text-center block mt-10;
+}
+footer hr{
+  color:#282e3a;
+  @apply my-6;
+}
+
+footer .disclaimer ul li{
+  @apply mb-4;
+}
+
 /* Media queries */
 
 @media (min-width: 768px) {
